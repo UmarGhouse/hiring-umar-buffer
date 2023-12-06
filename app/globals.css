@@ -7,7 +7,7 @@
 body {
     /* Body */
     font-family: var(--font-montserrat);
-    font-size: 24px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -27,4 +27,8 @@ h1 {
 
 h2 {
     font-size: 35px;
+}
+
+a {
+    @apply underline text-orange-75 hover:text-orange-100 outline-2 outline-offset-2 focus:outline-orange-50 focus:text-orange-100
 }
