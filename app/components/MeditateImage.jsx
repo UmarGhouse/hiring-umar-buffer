@@ -11,7 +11,7 @@ export default function MeditateImage() {
       <Image src="/me/coworker/Atom_Cube_2_0001.png" alt='keyboard' width={150} height={150} className='absolute top-0 right-24 z-1' ref={cubeRef} />
       <Image src="/me/coworker/Atom_Icosa_2_0003.png" alt='macbook' width={150} height={150} className='absolute z-10 left-0 top-20' ref={icosaRef} />
       <Image src="/me/coworker/Atom_Octa_1_0003.png" alt='watch' width={150} height={150} className='absolute bottom-0 right-0 z-10' ref={octaRef} />
-      <Image src="/me/coworker/folks-young-woman-sitting-in-lotus-position-1.png" alt='Logo' width={500} height={500} className='relative z-2' />
+      <Image src="/me/coworker/folks-young-woman-sitting-in-lotus-position-1.svg" alt='Logo' width={500} height={500} className='relative z-2' />
     </div>
   )
 }

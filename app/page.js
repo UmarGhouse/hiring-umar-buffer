@@ -112,7 +112,7 @@ export default function Home() {
           <h1>Ready? Let&apos;s work together!</h1>
 
           <div className='flex items-center justify-between'>
-            <Image src="/Handshake with blob.png" alt='Logo' width={700} height={700} />
+            <Image src="/Handshake with blob.svg" alt='Logo' width={700} height={700} />
             <p>
               Great! I already submitted an application, but can&apos;t link to it 🤷🏽‍♂️. Here&apos;s my <a href='https://umarghouse.com' target='_blank' referrerPolicy='no-referrer'>portfolio</a> instead.
               <br/>
