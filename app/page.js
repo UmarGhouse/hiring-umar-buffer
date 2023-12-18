@@ -8,6 +8,10 @@ import HeroImage from './components/HeroImage';
 import TeamImage from './components/TeamImage';
 import RobotHandsImage from './components/RobotHandsImage';
 import MeditateImage from './components/MeditateImage';
+import CodingBlobImage from './components/CodingBlobImage';
+import LearningBlobImage from './components/LearningBlobImage';
+import CoworkerBlobImage from './components/CoworkerBlobImage';
+import HandshakeBlobImage from './components/HandshakeBlobImage';
 
 export default function Home() {
   const router = useRouter();
@@ -39,7 +43,7 @@ export default function Home() {
         <div id='logos' className='bg-orange-50 w-full py-4'>
           <div className='container mx-auto flex flex-col items-center justify-between gap-y-4'>
             <p className='text-gray-600'>As Seen at:</p>
-            <div className='flex items-center justify-between gap-x-12 w-full'>
+            <div className='flex items-center justify-around gap-x-12 w-full'>
               <Image src="/companies/cogsy.svg" alt='Logo' width={100} height={100} />
               <Image src="/companies/frontier.svg" alt='Logo' width={100} height={100} />
               <div><Image src="/companies/buffer.svg" alt='Logo' width={100} height={100} className='inline' />?</div>
@@ -52,7 +56,7 @@ export default function Home() {
           <h1>What you get...</h1>
           
           <div className='flex items-center justify-around gap-x-2 mt-6'>
-            <Image src="/you/Learning with blob.png" alt='Logo' width={500} height={500} />
+            <LearningBlobImage />
             <div className='flex flex-col items-start justify-between gap-y-2'>
               <h2>A Quick learner</h2>
               <p>Being a self-taught developer, I&apos;m no stranger to learning what I need to get the job done. This website is the first time I&apos;ve used Figma and Next.js extensively, #learning</p>
@@ -64,11 +68,11 @@ export default function Home() {
               <h2>A Quicker coder</h2>
               <p>Did you know this website was designed and coded in X days? And the majority of that was learning Figma and Next.js</p>
             </div>
-            <Image src="/you/Coding with blob.png" alt='Logo' width={500} height={500} />
+            <CodingBlobImage />
           </div>
 
           <div className='flex items-center justify-around gap-x-2 mt-6'>
-            <Image src="/you/Coworker with blob.png" alt='Logo' width={500} height={500} />
+            <CoworkerBlobImage />
             <div className='flex flex-col items-start justify-between gap-y-2'>
               <h2>A kind, empathetic co-worker</h2>
               <p>Kindness and empathy are important to me (have you read my last 3 blog posts 🙈)</p>
@@ -112,7 +116,7 @@ export default function Home() {
           <h1>Ready? Let&apos;s work together!</h1>
 
           <div className='flex items-center justify-between'>
-            <Image src="/Handshake with blob.svg" alt='Logo' width={700} height={700} />
+            <HandshakeBlobImage />
             <p>
               Great! I already submitted an application, but can&apos;t link to it 🤷🏽‍♂️. Here&apos;s my <a href='https://umarghouse.com' target='_blank' referrerPolicy='no-referrer'>portfolio</a> instead.
               <br/>
