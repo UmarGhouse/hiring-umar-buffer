@@ -1,4 +1,5 @@
 import { League_Spartan, Montserrat } from 'next/font/google'
+import {Providers} from "./providers";
 import './globals.css'
 
 const leagueSpartan = League_Spartan({
@@ -18,7 +19,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${montserrat.variable} ${leagueSpartan.variable} scroll-smooth`}>
-      <body>{children}</body>
+      <body>
+        <Providers>
+          {children}
+        </Providers>
+      </body>
     </html>
   )
 }
