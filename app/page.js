@@ -18,9 +18,9 @@ export default function Home() {
   return (
     <main className='py-12'>
       {/* NAV */}
-      <div className='container mx-auto flex justify-between items-center w-full'>
+      <div className='container mx-auto px-6 flex flex-col md:flex-row justify-between items-center w-full'>
         <Image src="/logo.svg" alt='Logo' width={50} height={50} />
-        <div className='flex justify-between items-center gap-x-12'>
+        <div className='flex flex-col md:flex-row justify-between items-center gap-y-4 md:gap-x-12'>
           <a href='#what-you-get' className='no-underline'>What you Get</a>
           <a href='#what-i-get' className='no-underline'>What I Get</a>
           <button className='py-2 px-4 bg-orange-75 text-white rounded-md hover:bg-orange-100 focus:outline-none focus:ring focus:ring-orange-50' onClick={() => router.push('/#cta')}>Ready?</button>
@@ -28,32 +28,32 @@ export default function Home() {
       </div>
 
       {/* HERO */}
-      <div id='hero' className='container mx-auto flex justify-between items-center gap-x-2 relative w-full mt-12'>
-        <div className='flex flex-col items-start gap-y-4'>
+      <div id='hero' className='container mx-auto p-6 flex flex-col-reverse md:flex-row justify-between items-center gap-x-2 relative w-full mt-12'>
+        <div className='flex flex-col items-start gap-y-4 text-center md:text-left'>
           <h1>Meet Umar.<br/>Coder, Designer, Nice Guy.</h1>
           <p className='text-2xl'>Turning Code into Digital Magic, One Design at a Time!</p>
-          <button onClick={() => router.push('/#cta')} className='py-2 px-4 bg-orange-75 text-white rounded-md hover:bg-orange-100 focus:outline-none focus:ring focus:ring-orange-50'>Let&apos;s work together!</button>
+          <button onClick={() => router.push('/#cta')} className='py-2 px-4 bg-orange-75 text-white rounded-md hover:bg-orange-100 focus:outline-none focus:ring focus:ring-orange-50 w-full md:w-max'>Let&apos;s work together!</button>
         </div>
         <HeroImage />
       </div>
 
       {/* LOGOS */}
       <div id='logos' className='bg-orange-50 w-full py-4'>
-        <div className='container mx-auto flex flex-col items-center justify-between gap-y-4'>
+        <div className='container mx-auto px-6 flex flex-col items-center justify-between gap-y-4'>
           <p className='text-gray-600'>As Seen at:</p>
           <div className='flex items-center justify-around gap-x-12 w-full'>
             <Image src="/companies/cogsy.svg" alt='Logo' width={100} height={100} />
             <Image src="/companies/frontier.svg" alt='Logo' width={100} height={100} />
-            <div><Image src="/companies/buffer.svg" alt='Logo' width={100} height={100} className='inline' />?</div>
+            <div className='flex items-center'><Image src="/companies/buffer.svg" alt='Logo' width={100} height={100} className='inline' />?</div>
           </div>
         </div>
       </div>
 
       {/* What YOU get */}
-      <div id='what-you-get' className='container mx-auto mt-12 py-12'>
+      <div id='what-you-get' className='container mx-auto mt-12 py-12 px-6 '>
         <h1>What you get...</h1>
         
-        <div className='flex items-center justify-around gap-x-2 mt-6'>
+        <div className='flex flex-col md:flex-row items-center justify-around gap-y-2 md:gap-x-2 mt-6'>
           <LearningBlobImage />
           <div className='flex flex-col items-start justify-between gap-y-2'>
             <h2>A Quick learner</h2>
@@ -61,7 +61,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='flex items-center justify-around gap-x-2 mt-6'>
+        <div className='flex flex-col-reverse md:flex-row items-center justify-around gap-y-2 md:gap-x-2 mt-6'>
           <div className='flex flex-col items-start justify-between gap-y-2'>
             <h2>A Quicker coder</h2>
             <p>Did you know this website was designed and coded in X days? And the majority of that was learning Figma and Next.js</p>
@@ -69,7 +69,7 @@ export default function Home() {
           <CodingBlobImage />
         </div>
 
-        <div className='flex items-center justify-around gap-x-2 mt-6'>
+        <div className='flex flex-col md:flex-row items-center justify-around gap-y-2 md:gap-x-2 mt-6'>
           <CoworkerBlobImage />
           <div className='flex flex-col items-start justify-between gap-y-2'>
             <h2>A kind, empathetic co-worker</h2>
@@ -79,11 +79,11 @@ export default function Home() {
       </div>
 
       {/* What I get */}
-      <div id='what-i-get' className='bg-orange-50 w-full mt-12 py-12'>
+      <div id='what-i-get' className='bg-orange-50 w-full mt-12 py-12 px-6 '>
         <div className='container mx-auto'>
           <h1>What I get...</h1>
           
-          <div className='flex items-center justify-between gap-x-8 mt-6'>
+          <div className='flex flex-col md:flex-row items-center justify-between gap-y-2 md:gap-x-8 mt-6'>
             <TeamImage />
             <div className='flex flex-col items-start justify-between gap-y-2'>
               <h2>An Exceptional Team</h2>
@@ -91,7 +91,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className='flex items-center justify-between gap-x-8 mt-6'>
+          <div className='flex flex-col-reverse md:flex-row items-center justify-between gap-y-2 md:gap-x-8 mt-6'>
             <div className='flex flex-col items-start justify-between gap-y-2'>
               <h2>Your Challenges, my Canvas</h2>
               <p>This role covers two of my passions - challenge and creativity. It&apos;s where art meets code.</p>
@@ -99,7 +99,7 @@ export default function Home() {
             <RobotHandsImage />
           </div>
 
-          <div className='flex items-center justify-between gap-x-8 mt-6'>
+          <div className='flex flex-col md:flex-row items-center justify-between gap-y-2 md:gap-x-8 mt-6'>
             <MeditateImage />
             <div className='flex flex-col items-start justify-between gap-y-2'>
               <h2>Values that Resonate</h2>
@@ -110,10 +110,10 @@ export default function Home() {
       </div>
 
       {/* CTA */}
-      <div id='cta' className='container mx-auto mt-12'>
+      <div id='cta' className='container mx-auto mt-12 px-6 '>
         <h1>Ready? Let&apos;s work together!</h1>
 
-        <div className='flex items-center justify-between'>
+        <div className='flex flex-col md:flex-row items-center justify-between'>
           <HandshakeBlobImage />
           <p>
             Great! I already submitted an application, but can&apos;t link to it 🤷🏽‍♂️. Here&apos;s my <a href='https://umarghouse.com' target='_blank' referrerPolicy='no-referrer'>portfolio</a> instead.
@@ -125,7 +125,7 @@ export default function Home() {
       </div>
 
       {/* FOOTER */}
-      <div id='footer' className='container mx-auto mt-12'>
+      <div id='footer' className='container mx-auto mt-12 px-6 '>
         <div className='flex items-center justify-between'>
           <Image src="/logo.svg" alt='Logo' width={50} height={50} />
 
@@ -157,7 +157,7 @@ export default function Home() {
           </PopoverTrigger>
 
           <PopoverContent>
-            <div className="bg-orange-50 p-6 rounded-lg">
+            <div className="bg-orange-10 p-6 rounded-lg">
               <p>Handshake Illustration by <a href='https://icons8.com/illustrations/author/zD2oqC8lLBBA'>Icons 8</a> from <a href='https://icons8.com/illustrations'>Ouch!</a></p>
               <p>Hero Illustration by <a href='https://icons8.com/illustrations/author/zD2oqC8lLBBA'>Icons 8</a> from <a href='https://icons8.com/illustrations'>Ouch!</a></p>
               <p>Exceptional Team Illustration by <a href='https://icons8.com/illustrations/author/mNCLibjicqSz'>Julia K</a> from <a href='https://icons8.com/illustrations'>Ouch!</a></p>
