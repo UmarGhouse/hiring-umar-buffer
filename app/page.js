@@ -1,6 +1,5 @@
 'use client';
 
-import { useState } from "react";
 import Image from 'next/image';
 import { useRouter } from 'next/navigation'
 import { Popover, PopoverTrigger, PopoverContent } from "@nextui-org/popover";
@@ -24,7 +23,7 @@ export default function Home() {
 
       {/* HERO */}
       <div id='hero' className='container mx-auto p-6 flex flex-col-reverse md:flex-row justify-between items-center gap-x-2 relative w-full mt-12'>
-        <div className='flex flex-col items-start gap-y-4 text-center md:text-left'>
+        <div className='flex flex-col basis-1/2 items-start gap-y-4 text-center md:text-left'>
           <h1>Meet Umar.<br />Coder, Designer, Nice Guy.</h1>
           <p className='text-2xl'>Turning Code into Digital Magic, One Design at a Time!</p>
           <button onClick={() => router.push('/#cta')} className='py-2 px-4 bg-orange-75 text-white rounded-md hover:bg-orange-100 focus:outline-none focus:ring focus:ring-orange-50 w-full md:w-max'>Let&apos;s work together!</button>
@@ -50,25 +49,25 @@ export default function Home() {
 
         <div className='flex flex-col md:flex-row items-center justify-around gap-y-2 md:gap-x-2 mt-6'>
           <LearningBlobImage />
-          <div className='flex flex-col items-start justify-between gap-y-2'>
+          <div className='flex flex-col basis-1/2 items-start justify-between gap-y-2'>
             <h2>A Quick learner</h2>
             <p>Being a self-taught developer, I&apos;m no stranger to learning what I need to get the job done. This website is the first time I&apos;ve used Figma and Next.js extensively, #learning</p>
           </div>
         </div>
 
         <div className='flex flex-col-reverse md:flex-row items-center justify-around gap-y-2 md:gap-x-2 mt-6'>
-          <div className='flex flex-col items-start justify-between gap-y-2'>
+          <div className='flex flex-col basis-1/2 items-start justify-between gap-y-2'>
             <h2>A Quicker coder</h2>
-            <p>Did you know this website was designed and coded in X days? And the majority of that was learning Figma and Next.js</p>
+            <p>Did you know this website was designed and coded in under 48 <em>hours</em> of work? Some of that was just learning Figma and Next.js</p>
           </div>
           <CodingBlobImage />
         </div>
 
         <div className='flex flex-col md:flex-row items-center justify-around gap-y-2 md:gap-x-2 mt-6'>
           <CoworkerBlobImage />
-          <div className='flex flex-col items-start justify-between gap-y-2'>
+          <div className='flex flex-col basis-1/2 items-start justify-between gap-y-2'>
             <h2>A kind, empathetic co-worker</h2>
-            <p>Kindness and empathy are important to me (have you read my last 3 blog posts 🙈)</p>
+            <p>Kindness and empathy are important to me (have you read my last 3 blog posts 🙈). Crafting not just websites but a culture of compassion is what sets my work apart. Let&apos;s weave a little more kindness into every line of code and design together, shall we? 🌟</p>
           </div>
         </div>
       </div>
@@ -78,7 +77,7 @@ export default function Home() {
         <div className='container mx-auto'>
           <h1>What I get...</h1>
 
-          <div className='flex flex-col md:flex-row items-center justify-between gap-y-2 md:gap-x-8 mt-6'>
+          <div className='flex flex-col basis-1/2 md:flex-row items-center justify-between gap-y-2 md:gap-x-8 mt-6'>
             <TeamImage />
             <div className='flex flex-col items-start justify-between gap-y-2'>
               <h2>An Exceptional Team</h2>
@@ -86,7 +85,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className='flex flex-col-reverse md:flex-row items-center justify-between gap-y-2 md:gap-x-8 mt-6'>
+          <div className='flex flex-col-reverse basis-1/2 md:flex-row items-center justify-between gap-y-2 md:gap-x-8 mt-6'>
             <div className='flex flex-col items-start justify-between gap-y-2'>
               <h2>Your Challenges, my Canvas</h2>
               <p>This role covers two of my passions - challenge and creativity. It&apos;s where art meets code.</p>
@@ -94,11 +93,11 @@ export default function Home() {
             <RobotHandsImage />
           </div>
 
-          <div className='flex flex-col md:flex-row items-center justify-between gap-y-2 md:gap-x-8 mt-6'>
+          <div className='flex flex-col basis-1/2 md:flex-row items-center justify-between gap-y-2 md:gap-x-8 mt-6'>
             <MeditateImage />
             <div className='flex flex-col items-start justify-between gap-y-2'>
               <h2>Values that Resonate</h2>
-              <p>An organisation that prioritizes kindness, ambition and people over profit is exactly what I am looking for.</p>
+              <p>An organisation that prioritizes kindness, ambition and people over profit is exactly what I&apos;m looking for.</p>
             </div>
           </div>
         </div>
@@ -108,7 +107,7 @@ export default function Home() {
       <div id='cta' className='container mx-auto mt-12 px-6 '>
         <h1>Ready? Let&apos;s work together!</h1>
 
-        <div className='flex flex-col md:flex-row items-center justify-between'>
+        <div className='flex flex-col basis-1/2 md:flex-row items-center justify-between'>
           <HandshakeBlobImage />
           <p>
             Great! I already submitted an application, but can&apos;t link to it 🤷🏽‍♂️. Here&apos;s my <a href='https://umarghouse.com' target='_blank' referrerPolicy='no-referrer'>portfolio</a> instead.

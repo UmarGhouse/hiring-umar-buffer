@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { useParallax } from 'react-scroll-parallax';
 
 export default function CoworkerBlobImage() {
-  const { ref: blobRef } = useParallax({ rotate: [0, -40] });
+  const { ref: blobRef } = useParallax({ rotate: [0, -80] });
 
   return (
     <div className='relative mb-16'>

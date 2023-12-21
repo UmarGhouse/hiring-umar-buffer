@@ -5,30 +5,38 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Montserrat&display=swap');
 
 body {
-    /* Body */
-    font-family: var(--font-montserrat);
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  /* Body */
+  font-family: var(--font-montserrat);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 h1, h2 {
-    /* Heading */
-    font-family: var(--font-league-spartan);
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+  /* Heading */
+  font-family: var(--font-league-spartan);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 h1 {
-    font-size: 45px;
+  font-size: 48px;
 }
 
 h2 {
-    font-size: 35px;
+  font-size: 40px;
 }
 
 a {
-    @apply underline text-orange-75 hover:text-orange-100 outline-2 outline-offset-2 focus:outline-orange-50 focus:text-orange-100
+  @apply
+    underline
+    text-orange-75
+    hover:text-orange-100
+    outline-2
+    hover:decoration-orange-50
+    outline-offset-2
+    focus:outline-orange-50
+    focus:text-orange-100
 }

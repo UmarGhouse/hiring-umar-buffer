@@ -42,11 +42,11 @@ export default function NavBar() {
         {/* MOBILE DRAWER BUTTON */}
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden"
+          className="md:hidden"
         />
 
         {/* DESKTOP */}
-        <div className="hidden sm:flex sm:items-center gap-4">
+        <div className="hidden md:flex md:items-center gap-4">
           <NavbarItem>
             <a href='#what-you-get' className='no-underline'>What you Get</a>
           </NavbarItem>
