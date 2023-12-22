@@ -36,9 +36,9 @@ export default function Home() {
         <div className='container mx-auto px-6 flex flex-col items-center justify-between gap-y-4'>
           <p className='text-gray-600'>As Seen at:</p>
           <div className='flex items-center justify-around gap-x-12 w-full'>
-            <Image src="/companies/cogsy.svg" alt='Logo' width={100} height={100} />
-            <Image src="/companies/frontier.svg" alt='Logo' width={100} height={100} />
-            <div className='flex items-center'><Image src="/companies/buffer.svg" alt='Logo' width={100} height={100} className='inline' />?</div>
+            <Image src="/companies/Cogsy.svg" alt='Cogsy Logo' width={100} height={100} />
+            <Image src="/companies/frontier.svg" alt='Frontier Research Logo' width={100} height={100} />
+            <div className='flex items-center'><Image src="/companies/buffer.svg" alt='Buffer Logo' width={100} height={100} className='inline' />?</div>
           </div>
         </div>
       </div>
