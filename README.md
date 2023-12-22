@@ -4,6 +4,8 @@ This serves as a showcase of my coding and design capabilities.
 
 The original Figma file for the design can be found [here](https://www.figma.com/file/AQtHb9dPx1zBTHUAL9bVhH/Buffer-application-website?type=design&node-id=15%3A142&mode=design&t=5oe2ogsCTf5Flki3-1).
 
+The final, hosted version of this site can be viewed [here](https://hiring-umar-buffer.vercel.app/).
+
 ## Getting Started
 
 First, install dependencies:
